@@ -342,7 +342,58 @@
     width: 25%;
     padding: 8px;
 }
-
+/* todo Our Process section */
+.process {
+    background-color: #00B7B5;
+    margin-top: 150px;
+    color: #ffffff;
+    height: auto;
+    padding-bottom: 60px;
+}
+.process .headding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    line-height: 60px;
+    padding-top: 60px;
+}
+.process .headding h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+.process .process-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.process .process-cards .process-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-basis: 230px;
+}
+.process .process-cards .process-card img {
+    background-color: white;
+    padding: 20px;
+    border-radius: 50%;
+    overflow: visible;
+    height: 70px;
+}
+.process .process-cards .process-card h4 {
+    font-size: 1.2rem;
+    font-weight: 750;
+}
+.process .process-cards .process-card p {
+    color: #e4e5e7;
+    line-height: 35px;
+    text-align: center;
+}
 
 
 
@@ -513,6 +564,9 @@
 }
 .services .services-cards .services-card .img .info .svg {
     width: 26%;
+}
+.process .headding h1 {
+    font-size: 2.1rem;
 }
 
 }
