@@ -223,7 +223,125 @@
 .hero-section .analitics-animationbar .analitics-card .progress-bar-container .bar6 {
     width: 92%;
 }
-
+/* todo services */
+.services {
+    margin: 20px 40px;
+}
+.services .headding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    line-height: 60px;
+}
+.services h4 {
+    color: #00B7B5;
+}
+.services h1 {
+    color: #2A485E;
+    font-size: 3rem;
+    text-align: center;
+}
+.services .services-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 100px 20px;
+    justify-items: center;
+}
+.services .services-cards .services-card {
+    
+}
+.services .services-cards .services-card .img  {
+    height: 200px;
+    width: 385px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    background-size: 100%; 
+    transition: background-size 0.5s ease-in-out;
+}
+.services .services-cards .services-card .img1 {
+    background-image: 
+    linear-gradient(1deg,rgb(56, 173, 171) 0%, rgba(229, 248, 247, 0.23) 75%), 
+    url('../images/services1.webp');
+    /* background-size: 100%; */
+}
+.services .services-cards .services-card .img1:hover {
+    background-size: 110%;
+}
+.services .services-cards .services-card .img2 {
+    background-image: 
+    linear-gradient(1deg,rgb(56, 173, 171) 0%, rgba(229, 248, 247, 0.23) 75%), 
+    url('../images/services2.webp');
+}
+.services .services-cards .services-card .img2:hover {
+    background-size: 110%;
+}
+.services .services-cards .services-card .img3 {
+    background-image: 
+    linear-gradient(1deg,rgb(56, 173, 171) 0%, rgba(229, 248, 247, 0.23) 75%), 
+    url('../images/services3.webp');
+}
+.services .services-cards .services-card .img3:hover {
+    background-size: 110%;
+}
+.services .services-cards .services-card .img4 {
+    background-image: 
+    linear-gradient(1deg,rgb(56, 173, 171) 0%, rgba(229, 248, 247, 0.23) 75%), 
+    url('../images/services4.webp');
+}
+.services .services-cards .services-card .img4:hover {
+    background-size: 110%;
+}
+.services .services-cards .services-card .img5 {
+    background-image: 
+    linear-gradient(1deg,rgb(56, 173, 171) 0%, rgba(229, 248, 247, 0.23) 75%), 
+    url('../images/services5.webp');
+}
+.services .services-cards .services-card .img5:hover {
+    background-size: 110%;
+}
+.services .services-cards .services-card .img6 {
+    background-image: 
+    linear-gradient(1deg,rgb(56, 173, 171) 0%, rgba(229, 248, 247, 0.23) 75%), 
+    url('../images/services6.webp');
+}
+.services .services-cards .services-card .img6:hover {
+    background-size: 110%;
+}
+.services .services-cards .services-card .img .info {
+    background-color: white;
+    border-radius: 30px;
+    margin: 25px;
+    padding: 30px;
+    position: absolute;
+    bottom: -140px;
+    line-height: 30px;
+    height: 190px;
+}
+.services .services-cards .services-card .img .info h4 {
+    font-size: 20px;
+    color: #2a485e;
+    margin-bottom: 15px;
+}
+.services .services-cards .services-card .img .info p {
+    font-size: 1rem;
+    color: #8492a6;
+}
+.services .services-cards .services-card .img .info .svg {
+    background-color: #00B7B5;
+    position: absolute;
+    top: -40px;
+    right: 25px;
+    border-radius: 50%;
+    height: 40%;
+    width: 25%;
+    padding: 8px;
+}
 
 
 
@@ -240,6 +358,12 @@
 .hero-section .analitics-animationbar {
     padding: 0px 150px;
 }
+/* .services .services-cards .services-card .img {
+    width: 435px;
+} */
+/* .services .services-cards .services-card .img .info .svg {
+    width: 20%;
+} */
 }
 @media screen and (min-width: 1084px) and (max-width: 1439px) {
 .hero-section {
@@ -254,7 +378,24 @@
 }
 }
 @media screen and (max-width: 1024px) {
-
+.services .services-cards {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.services .services-cards .services-card .img {
+    width: 300px;
+}
+.services .services-cards .services-card .img .info {
+    margin: 20px;
+    padding: 15px;
+}
+.services .services-cards .services-card .img .info h4 {
+    font-size: 16px;
+    padding-top: 10px;
+}
+.services .services-cards .services-card .img .info .svg {
+    height: 35%;
+    padding: 2px;
+}
 }
 @media screen and (max-width: 768px) {
 .navigation-bar {
@@ -283,8 +424,18 @@
     /* padding: 0px 0px; */
     padding: 20px;
 }
+.services .services-cards {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.services .services-cards .services-card .img {
+    width: 340px;
+}
+.services .services-cards .services-card .img .info .svg {
+    width: 23%;
+}
 
 }
+
 
 @media screen and (min-width: 320px) and (max-width: 426px) {
 .navigation-bar ul {
@@ -351,4 +502,17 @@
 .hero-section .analitics-animationbar h3 {
     text-align: center;
 }
+.services h1 {
+    font-size: 2rem;
+}
+.services .services-cards {
+    grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+}
+.services .services-cards .services-card .img {
+    width: 300px;
+}
+.services .services-cards .services-card .img .info .svg {
+    width: 26%;
+}
+
 }
