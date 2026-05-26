@@ -394,6 +394,43 @@
     line-height: 35px;
     text-align: center;
 }
+/* todo about-us section */
+.about-us {
+    display: flex;
+    width: 100%;
+}
+.about-us .about-us-info {
+    width: 50%;
+    background-color: #ccf1f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 40px;
+    padding: 30px 70px;
+}
+.about-us .about-us-info h4{
+    color: #00B7B5;
+}
+.about-us .about-us-info h1 {
+    color: #2A485E;
+    font-size: 2.8rem;
+}
+.about-us .about-us-info p {
+    color: #8492a6;
+    line-height: 30px;
+}
+.about-us .about-us-info .signature img {
+    height: 100px;
+}
+.about-us .about-us-img {
+    width: 50%;
+}
+.about-us .about-us-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
@@ -567,6 +604,19 @@
 }
 .process .headding h1 {
     font-size: 2.1rem;
+}
+.about-us {
+    flex-direction: column;
+}
+.about-us .about-us-info {
+    width: 100%;
+    padding: 30px 30px;
+}
+.about-us .about-us-info h1 {
+    font-size: 1.8rem;
+}
+.about-us .about-us-img {
+    width: 100%;
 }
 
 }
