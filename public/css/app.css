@@ -623,6 +623,68 @@ select {
 .testimonials .testimonials-cards-navigate span:last-child {
     background-color: #8492a6;
 } 
+/* todo faq section */
+.faq {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.faq .faq-headding {
+    width: 50%;
+    padding: 100px 50px 50px;
+}
+.faq .faq-headding h4 {
+    color: #00B7B5;
+    margin-bottom: 40px;
+}
+.faq .faq-headding h1 {
+    color: #2A485E;
+    font-size: 3rem;
+}
+.faq .accordion {
+    width: 50%;
+    padding: 80px;
+}
+.faq .accordion .faq-buttons {
+    display: flex;
+    margin-bottom: 40px;
+}
+.faq .accordion .faq-buttons .normal-btn {
+    color: #8492a6;
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    height: 40px;
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+}
+.faq .accordion .accordion-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    /* padding: 100px 50px 50px;         */
+}
+.faq .accordion .accordion-items .accordion-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #ccd0d3;
+    padding-bottom: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.faq .accordion .accordion-items .accordion-item .accordion-text {
+    color: #2A485E;
+}
+.faq .accordion .accordion-items .accordion-item img {
+    height: 15px;
+}
 
 
 
@@ -680,6 +742,10 @@ select {
     height: 35%;
     padding: 2px;
 }
+.faq .accordion {
+    width: 60%;
+    padding: 80px 30px;
+}
 }
 @media screen and (max-width: 768px) {
 .navigation-bar {
@@ -716,6 +782,14 @@ select {
 }
 .services .services-cards .services-card .img .info .svg {
     width: 23%;
+}
+.faq .faq-headding {
+    width: 40%;
+    padding: 100px 20px;
+}
+.faq .faq-headding h1 {
+    color: #2A485E;
+    font-size: 2rem;
 }
 
 }
@@ -841,5 +915,24 @@ select {
 .testimonials .testimonials-cards-navigate {
     margin: 30px;
 }
+.faq {
+    flex-direction: column;
+}
+.faq .faq-headding {
+    width: 100%;
+    padding: 40px 20px;
+}
+.faq .accordion {
+    width: 100%;
+    padding: 20px;
+}
+.faq .accordion .accordion-items .accordion-item {
+    font-size: 13px;
+}
+.faq .accordion .faq-buttons {
+    flex-direction: column;
+    align-items: center;
+}
+
 
 }
