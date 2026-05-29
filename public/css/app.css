@@ -799,6 +799,20 @@ select {
     text-decoration: none;
     font-weight: bold;
 }
+/* todo call to action  */
+.cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #00B7B5;
+    color: #ffffff;
+    padding: 50px;
+    font-size: 16px;
+}
+.cta .border-btn {
+    border: 1px solid #d7d2d2;
+}
 
 
 
@@ -860,6 +874,9 @@ select {
     width: 60%;
     padding: 80px 30px;
 }
+.cta {
+    font-size: 13px;
+}
 }
 @media screen and (max-width: 768px) {
 .navigation-bar {
@@ -908,6 +925,9 @@ select {
 .player {
     width: 100px;
     height: 100px;
+}
+.cta {
+    font-size: 9px;
 }
 
 }
@@ -1058,6 +1078,13 @@ select {
 .video .triangle-right {
     top: 23.5%;
     left: 37%;
+}
+.cta {
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px 10px;
+    font-size: 8px;
+    text-align: center;
 }
 
 
