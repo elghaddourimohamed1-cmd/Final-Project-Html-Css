@@ -1,0 +1,133 @@
+/* todo contact us hero section */
+.contact-us-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    background-color: #e5f8f7;   
+    gap: 10px;
+}
+.contact-us-hero h1 {
+    color: #2a485e; 
+    font-size: 50px;
+    font-weight: 600;  
+}
+.contact-us-hero .breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+.contact-us-hero .breadcrumb a {
+    text-decoration: none;
+    color: #c4c2c2;
+}
+.contact-us-hero .breadcrumb a:hover {
+    color: #8492a6;
+}
+.contact-us-hero .breadcrumb {
+    color: #777777;
+}
+/* todo contact us main section */
+.contact-us-section {
+    width: 100%;
+}
+.contact-us-section .location-details-and-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us-section .location-details-and-form .locations {
+    width: 50%;
+    padding: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.contact-us-section .location-details-and-form .location {
+    flex-basis: 266px;
+}
+.contact-us-section .location-details-and-form .location h4 {
+    font-size: 19px;
+    color: #2a485e;
+}
+.contact-us-section .location-details-and-form .location p {
+    color: #8492a6;
+    line-height: 30px;
+}
+.contact-us-section .location-details-and-form .form {
+    width: 50%;
+    padding: 35px;
+}
+.contact-us-section .location-details-and-form .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+    padding: 50px 35px;
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    padding: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f9f9f9;
+    border: solid 1px rgba(0, 0, 0, 0.05);
+}
+}
+.contact-us-section .location-details-and-form .form .name-email-phone-message {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+}
+.contact-us-section .location-details-and-form .form .name-email-phone-message .contact-btn {
+    width: auto; 
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* todo responsive */   
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+.contact-us-section .location-details-and-form .location {
+    flex-basis: 204px;
+}
+}
+@media screen and (min-width: 1084px) and (max-width: 1439px) {
+
+}
+@media screen and (max-width: 1024px) {
+.contact-us-section .location-details-and-form .location {
+    flex-basis: 200px;
+}
+}
+@media screen and (max-width: 768px) {
+.contact-us-section .location-details-and-form .location {
+    flex-basis: 300px;
+}
+.contact-us-section .location-details-and-form .form {
+    width: 60%;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 426px) {
+.contact-us-section .location-details-and-form {
+    flex-direction: column;
+}
+.contact-us-section .location-details-and-form .locations {
+    width: 100%;
+}
+.contact-us-section .location-details-and-form .form {
+    width: 100%;
+}
+}
+
+
+
+
+
