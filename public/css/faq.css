@@ -1,0 +1,137 @@
+/* todo faq hero section */
+.faq-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    background-color: #e5f8f7;   
+    gap: 10px;
+}
+.faq-hero h1 {
+    color: #2a485e; 
+    font-size: 50px;
+    font-weight: 600;  
+}
+.faq-hero .breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+.faq-hero .breadcrumb a {
+    text-decoration: none;
+    color: #c4c2c2;
+}
+.faq-hero .breadcrumb a:hover {
+    color: #8492a6;
+}
+.faq-hero .breadcrumb {
+    color: #777777;
+}
+/* todo faq main section */
+.faq {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.faq .faq-img {
+    width: 38%;
+    padding: 70px 50px 50px;
+}
+.faq .faq-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+.faq .accordion {
+    width: 70%;
+    padding: 70px 0px 70px 70px;
+}
+.faq .accordion .faq-buttons {
+    display: flex;
+    margin-bottom: 40px;
+}
+.faq .accordion .faq-buttons .normal-btn {
+    color: #8492a6;
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    height: 40px;
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+}
+.faq .accordion .accordion-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.faq .accordion .accordion-items .accordion-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #ccd0d3;
+    padding-bottom: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.faq .accordion .accordion-items .accordion-item .accordion-text {
+    color: #2A485E;
+    font-weight: 600;
+}
+.faq .accordion .accordion-items .accordion-item img {
+    height: 15px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* todo responsive */   
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+}
+@media screen and (min-width: 1084px) and (max-width: 1439px) {
+
+}
+@media screen and (max-width: 1024px) {
+.faq .accordion {
+    width: 60%;
+}
+.master-btn {
+    padding: 10px 5px;
+}
+}
+@media screen and (max-width: 768px) {
+.faq {
+    flex-direction: column;
+}
+.faq .accordion {
+    width: 100%;
+    padding: 70px 70px 70px 70px;
+}
+.master-btn {
+    padding: 10px 20px;
+}
+.faq .faq-img {
+    width: 100%;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 426px) {
+.faq .accordion {
+    padding: 20px;
+}
+.master-btn {
+    width: stretch;
+}
+.faq .faq-img {
+    padding: 20px;
+}
+}
+
+
+
