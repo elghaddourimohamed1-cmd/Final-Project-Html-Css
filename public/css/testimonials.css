@@ -1,0 +1,134 @@
+/* todo Testimonials hero section */
+.testimonials-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    background-color: #e5f8f7;   
+    gap: 10px;
+}
+.testimonials-hero h1 {
+    color: #2a485e; 
+    font-size: 50px;
+    font-weight: 600;  
+}
+.testimonials-hero .breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+.testimonials-hero .breadcrumb a {
+    text-decoration: none;
+    color: #c4c2c2;
+}
+.testimonials-hero .breadcrumb a:hover {
+    color: #8492a6;
+}
+.testimonials-hero .breadcrumb {
+    color: #777777;
+}
+/* todo Testimonials main section */
+.testimonials {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background: none;
+}
+.testimonials .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 100px 40px;
+}  
+.testimonials .cards .card {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+}  
+/* .testimonials .testimonials-cards .testimonial-card .testimonial-text .testimonial-paragraph .img-stars img {
+    height: 18px;
+    margin-top: 25px;
+}   */
+.testimonials .cards .card .testimonial-user-info-google {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+    margin: 10px 0px;
+}  
+.testimonials .cards .card .testimonial-user-info-google .testimonial-user-info {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0px;
+} 
+.testimonials .cards .card .testimonial-user-info-google .testimonial-user-info .user-img img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+}  
+.testimonials .cards .card .testimonial-user-info-google .testimonial-user-info .user-name-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+} 
+.testimonials .cards .card .testimonial-user-info-google .testimonial-user-info .user-name-date h4 {
+    color: #2A485E;
+}
+.testimonials .cards .card .testimonial-user-info-google .testimonial-user-info .user-name-date p {
+    color: #8492a6;
+} 
+.testimonials .cards .card .testimonial-user-info-google .google-logo img {
+    height: 45px;
+}
+.testimonials .cards .card .stars img {
+    height: 20px;
+    margin: 15px 0px 20px;
+}
+.testimonials .cards .card .testimonial-quote {
+    color: #8492a6;
+    line-height: 30px
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* todo responsive */   
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+}
+@media screen and (min-width: 1084px) and (max-width: 1439px) {
+
+}
+@media screen and (max-width: 1024px) {
+.testimonials .cards {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px 20px;
+}
+.testimonials .cards .card {
+    width: 300px;
+}
+}
+@media screen and (max-width: 768px) {
+.testimonials .cards {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px 60px;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 426px) {
+.testimonials .cards {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 50px 10px;
+}
+.testimonials .cards .card {
+    width: 300px;
+}
+}
