@@ -43,15 +43,6 @@
 .navigation-bar .burger-button {
     display: none;
 }
-/* .navigation-bar .master-btn {
-    background: #00b7b5;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-weight: 600;
-    height: 40px;
-}  */
 .master-btn {
     background: #00b7b5;
     color: white;
@@ -63,7 +54,54 @@
     display: block;
     width: fit-content;
     cursor: pointer;
-} 
+}
+/* 1. The Main Button Wrapper Container */
+.rolling-btn {
+    height: 40px;             /* Define a solid, explicit height */
+    width: 140px;             /* Give it a fixed width so text lines up */
+    display: inline-block;
+    border-radius: 30px;
+    overflow: hidden;         /* Hides the second label sitting underneath */
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* 2. The Internal Sliding Slider */
+.rolling-btn .btn-text-wrapper {
+    display: flex;
+    flex-direction: column;   /* Stacks the text blocks vertically */
+    /* height: 100%; */
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); /* Premium slide speed */
+}
+
+/* 3. Style both text states to look exactly like your original buttons */
+.rolling-btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;             /* Must match the container height exactly */
+    width: 100%;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* Master State Background (Teal) */
+.rolling-btn .master-text {
+    background: #00b7b5;
+}
+
+/* Hover State Background (Dark Blue/Teal) */
+.rolling-btn .hover-text {
+    background: #005461;
+}
+
+/* 4. The Magic Trigger: Hover the outer stable link, slide the inside wrapper */
+.rolling-btn:hover .btn-text-wrapper {
+    transform: translateY(-45px); /* Slides up exactly by its own height */
+}
 .navigation-bar .after-hover {
     position: absolute;
     top: 20%;
