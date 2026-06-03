@@ -1,93 +1,3 @@
-/* todo burger button  */
-.burger-button {
-    background: none;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-    padding: 0;
-    color: #00B7B5;
-}
-.burger-button span {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: #068DA0;
-    border-radius: 2px;
-}
-
-/* todo search wish list and cart */
-.search-wishlist-cart {
- display: flex;
- align-items: center;
- gap: 10px;
-}
-.search-wishlist-cart input {
-    border-radius: 30px;
-    border: 1px solid #00000033;
-    width: 100%;
-}
-input#search {
-    height: 35px;
-    width: 150px;
-    padding-left: 20px;
-    font-size: 16px;
-}
-.search-wishlist-cart .wishlist-cart {
-    display: flex;
-    gap: 20px;
-}
-.search-wishlist-cart .wishlist-cart .wish-list {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-.search-wishlist-cart .wishlist-cart .cart-btn {
-    display: flex;
-    align-items: center;
-}
-.search-wishlist-cart .wishlist-cart .wish-list .wishlist-counter {
-    background-color: #00B7B5;
-    text-decoration: none;
-    padding: 12px;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    font-size: 12px;
-}
-.search-wishlist-cart .wishlist-cart .cart-btn {
-    position: relative;
-}
-.search-wishlist-cart .wishlist-cart .cart-btn .cart-counter {
-    background-color: #00B7B5;
-    color: #ffffff;
-    padding: 12px;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    font-size: 12px;
-}
-.search-wishlist-cart .wishlist-cart a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-
 /* todo shop hero section */
 .shop-hero {
     display: flex;
@@ -124,6 +34,7 @@ input#search {
     display: flex;
     width: 100%;
     height: auto;
+    flex-direction: column;
 }
 .shop {
 
@@ -162,7 +73,7 @@ input#search {
 
 
 .filter-items {
-    width: 260px;
+    width: 300px;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -294,12 +205,15 @@ input#categories1 {
     color: #8492a6;
     padding-left: 10px;
 }
+
+
+
 .shop-container .products {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     justify-items: center;
-    width: 75%;
+    width: 100%;
     padding: 48px 30px
 }
 .shop-container .product {
@@ -450,7 +364,7 @@ input#categories1 {
     font-weight: bold;
     margin-top: 5px;
     margin-bottom: 0px;
-    font-size: 16px;
+    font-size: 17px;
     height: 18px;
     text-align: center;
     width: 280px;
@@ -462,86 +376,53 @@ input#categories1 {
     font-size: 17px;
     height: 18px;
 }
-.shop-container .product .product-info .color-picker .color {
-    border: solid 1px rgba(51, 51, 51, 0);
-    display: inline-block;
-    margin: 0 2px;
-    border-radius: 30px;
-    display: flex;
-    gap: 10px;
-    margin-top: 15px;
-}
-/* todo color picker  */
-.shop-container .product .product-info .color-picker .color .custom-color {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 30px;
-}
-.shop-container .product .product-info .color-picker .color .yellow {
-    background: #fdcc2d;
-}
-.shop-container .product .product-info .color-picker .color .purple {
-    background: #8e50c2;
-}
-.shop-container .product .product-info .color-picker .color .red {
-    background: #ea4c28;
-}
-.shop-container .product .product-info .color-picker .color .orange {
-    background: #fd7624;
-}
-.shop-container .product .product-info .color-picker .color .black {
-    background: #4e180a;
-}
-
-
 /* todo pagination  */
-.pagination ul {
+.shop-container .pagination ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     padding: 25px;
 }
-.pagination ul li {
+.shop-container .pagination ul li {
     list-style: none;
 }
-.pagination ul li a:hover {
+.shop-container .pagination ul li a:hover {
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
 }
-.pagination ul li a {
+.shop-container .pagination ul li a {
     color: #000000;
     text-decoration: none;
     font-size: 20px;
 }
-.pagination ul .page-item:hover  {
+.shop-container .pagination ul .page-item:hover  {
     padding: 10px 15px;
     background-color: #00b7b4e3;
     border-radius: 50%;
     cursor: pointer;
 }
-.pagination ul .page-item{
+.shop-container .pagination ul .page-item{
     padding: 10px 15px;
     background-color: transparent;
     border-radius: 50%;
     cursor: pointer;
 }
-.pagination ul .page-item:hover a {
+.shop-container .pagination ul .page-item:hover a {
     color: #ffffff;
 }
 
-.pagination ul .page-item:nth-child(2){
+.shop-container .pagination ul .page-item:nth-child(2){
     padding: 10px 15px;
     background-color: #00b7b4e3;
     border-radius: 50%;
     cursor: pointer;
 }
-.pagination ul .page-item:nth-child(2) a {
+.shop-container .pagination ul .page-item:nth-child(2) a {
     color: #ffffff;
 }
-.pagination ul li a:hover {
+.shop-container .pagination ul li a:hover {
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
@@ -555,23 +436,7 @@ input#categories1 {
 
 }
 @media screen and (max-width: 1024px) {
-.navigation-bar ul {
-    display: none;
-}
-.navigation-bar .burger-button {
-    display: flex;
-}
-.search-wishlist-cart {
-    gap: 0px;
-    justify-content: space-evenly;
-    width: 100%;
-}
-input#search {
-    height: 35px;
-    width: 350px;
-    padding-left: 20px;
-    font-size: 16px;
-}
+
 }
 @media screen and (max-width: 768px) {
 
@@ -580,21 +445,7 @@ input#search {
 .shop-container {
     flex-direction: column;
 }
-input#search {
-        height: 35px;
-        width: 100px;
-        padding-left: 6px;
-        font-size: 16px;
-    }
-    .navigation-bar .logo img {
-        height: 25px;
-    }
-.navigation-bar .logo h2 {
-    font-size: 14px;
-}
-.search-wishlist-cart .wishlist-cart {
-    gap: 14px;
-}
+
 }
 
 
