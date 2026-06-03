@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optilux Clear Vision</title>
-    <link rel="stylesheet" href="./public/css/app.css">
-    <link rel="stylesheet" href="./public/css/about-us.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/about-us.css">
 </head>
 
 <body>
     <!-- todo navigation bar -->
     <header>
         <nav class="navigation-bar">
-            <div class="logo"><img src="./public/images/swirling-circular-logo.jpg" alt="logo">
+            <div class="logo"><img src="../images/swirling-circular-logo.jpg" alt="logo">
                 <h2>Optilux</h2>
             </div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="./index.html">Home<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                             <path
                                 d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
@@ -32,11 +32,19 @@
                 <li><a href="">Pages<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                             <path
                                 d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
-                        </svg></a></li>
+                        </svg></a>
+                    <ul class="sub-menu">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </li>
                 <li><a href="">Shop<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                             <path
                                 d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
-                        </svg></a></li>
+                        </svg></a><ul class="sub-menu">
+                        <li><a href="shop.html">Shop 1</a></li>
+                        <li><a href="shop2.html">Shop 2</a></li>
+                    </ul></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
@@ -67,9 +75,9 @@
         <section class="about-us-section">
             <div class="main-info-and-img">
                 <div class="main-img">
-                    <img src="./public/images/services1.webp" alt="">
+                    <img src="../images/services1.webp" alt="">
                     <div class="absolute-div-img">
-                        <img src="./public/images/services_about-us_faq.webp" alt="">
+                        <img src="../images/services_about-us_faq.webp" alt="">
                     </div>
                 </div>
                 <div class="main-info">
@@ -150,7 +158,7 @@
             <div class="doctors-cards">
                 <div class="doctor-card">
                     <div class="doctor-img">
-                        <img src="./public/images/about-us-doctor-1.webp" alt="">
+                        <img src="../images/about-us-doctor-1.webp" alt="">
                     </div>
                     <div class="doctor-info">
                         <h4>Dr. Thomas Bennett</h4>
@@ -166,7 +174,7 @@
                 </div>
                 <div class="doctor-card">
                     <div class="doctor-img">
-                        <img src="./public/images/about-us-doctor-2.webp" alt="">
+                        <img src="../images/about-us-doctor-2.webp" alt="">
                     </div>
                     <div class="doctor-info">
                         <h4>Dr. Barbara Charline</h4>
@@ -182,7 +190,7 @@
                 </div>
                 <div class="doctor-card">
                     <div class="doctor-img">
-                        <img src="./public/images/about-us-doctor-3.webp" alt="">
+                        <img src="../images/about-us-doctor-3.webp" alt="">
                     </div>
                     <div class="doctor-info">
                         <h4>Dr. Peter Smith</h4>
@@ -198,7 +206,7 @@
                 </div>
                 <div class="doctor-card">
                     <div class="doctor-img">
-                        <img src="./public/images/about-us-doctor-4.webp" alt="">
+                        <img src="../images/about-us-doctor-4.webp" alt="">
                     </div>
                     <div class="doctor-info">
                         <h4>Dr. Joshua Henry</h4>
@@ -243,7 +251,7 @@
     <footer id="contact" class="foo">
         <div class="navigation-footer">
             <div class="footer1">
-                <div class="logo"><img src="./public/images/swirling-circular-logo-cropped.png" alt="logo">
+                <div class="logo"><img src="../images/swirling-circular-logo-cropped.png" alt="logo">
                 <h2>Optilux</h2>
                 </div>
                 <p>At Optilux, we’re dedicated to providing high-quality, personalized eye care for patients of all ages. Our skilled team uses the latest technology to ensure accurate exams, effective treatments, and clear, healthy vision for life.</p>

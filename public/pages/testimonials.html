@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optilux Clear Vision</title>
-    <link rel="stylesheet" href="./public/css/app.css">
-    <link rel="stylesheet" href="./public/css/faq.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/testimonials.css">
 </head>
 
 <body>
     <!-- todo navigation bar -->
     <header>
         <nav class="navigation-bar">
-            <div class="logo"><img src="./public/images/swirling-circular-logo.jpg" alt="logo">
+            <div class="logo"><img src="../images/swirling-circular-logo.jpg" alt="logo">
                 <h2>Optilux</h2>
             </div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="./index.html">Home<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                             <path
                                 d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
@@ -32,11 +32,19 @@
                 <li><a href="">Pages<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                             <path
                                 d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
-                        </svg></a></li>
+                        </svg></a>
+                    <ul class="sub-menu">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </li>
                 <li><a href="">Shop<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                             <path
                                 d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
-                        </svg></a></li>
+                        </svg></a><ul class="sub-menu">
+                        <li><a href="shop.html">Shop 1</a></li>
+                        <li><a href="shop2.html">Shop 2</a></li>
+                    </ul></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
@@ -54,56 +62,115 @@
         </nav>
     </header>
     <main class="main-content">
-        <!-- todo faq hero section -->
-        <section class="faq-hero">
-            <h1>FAQ</h1>
+        <!-- todo Testimonials hero section -->
+        <section class="testimonials-hero">
+            <h1>Testimonials</h1>
             <div class="breadcrumb">
                 <a href="index.html">Home</a>
                 <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9 6L15 12L9 18" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                <p>FAQs</p>
+                <p>Testimonials</p>
             </div>
         </section>
-        <!-- todo faq main section -->
-         <section class="faq">
-            <div class="accordion">
-                <div class="faq-buttons">
-                    <button class="master-btn">Appointments & Exams</button>
-                    <button class="normal-btn">Treatments & Procedures</button>
-                    <button class="normal-btn">Insurance & Payments</button>
+        <!-- todo Testimonials main section -->
+         <section class="testimonials">
+            <div class="cards">
+                <div class="card">
+                    <div class="testimonial-user-info-google">
+                        <div class="testimonial-user-info">
+                            <div class="user-img"><img src="../images/home- testimonial-michael-lee.webp" alt=""></div>
+                            <div class="user-name-date">
+                                <h4>Michael Lee</h4>
+                                <p>15 July 2025</p>
+                            </div>
+                        </div>
+                        <div class="google-logo"><img src="../images/google-color-svgrepo-com.svg" alt=""></div>
+                    </div>
+                    <div class="stars"><img src="../images/five-star-rating-icon.svg" alt=""></div>
+                    <p class="testimonial-quote">"The doctors were so attentive during my eye exam. They explained everything clearly and made me feel at ease. Highly recommended clinic!"</p>
                 </div>
-                <div class="accordion-items">
-                    <div class="accordion-item">
-                        <div class="accordion-text">How do I book an appointment?</div>
-                        <img src="./public/images/chevron-down-solid-full.svg" alt="">
+                <div class="card">
+                    <div class="testimonial-user-info-google">
+                        <div class="testimonial-user-info">
+                            <div class="user-img"><img src="../images/home- testimonial-sophia-martinez.webp" alt=""></div>
+                            <div class="user-name-date">
+                                <h4>Emily Johnson</h4>
+                                <p>3 August 2025</p>
+                            </div>
+                        </div>
+                        <div class="google-logo"><img src="../images/google-color-svgrepo-com.svg" alt=""></div>
                     </div>
-                    <div class="accordion-item">
-                        <div class="accordion-text">Do I need a referral to see an optometrist?</div>
-                        <img src="./public/images/chevron-down-solid-full.svg" alt="">
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-text">How often should I have my eyes checked?</div>
-                        <img src="./public/images/chevron-down-solid-full.svg" alt="">
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-text">How long does an eye exam take?</div>
-                        <img src="./public/images/chevron-down-solid-full.svg" alt="">
-                    </div>
-                    <div class="accordion-item">
-                        <div class="accordion-text">What should I bring to my appointment?</div>
-                        <img src="./public/images/chevron-down-solid-full.svg" alt="">
-                    </div>
+                    <div class="stars"><img src="../images/five-star-rating-icon.svg" alt=""></div>
+                    <p class="testimonial-quote">"I had cataract surgery here, and the whole process was smooth and stress-free. My vision has improved so much—thank you!"</p>
                 </div>
-            </div>
-            <div class="faq-img">
-                <img src="./public/images/services_about-us_faq.webp" alt="">
+                <div class="card">
+                    <div class="testimonial-user-info-google">
+                        <div class="testimonial-user-info">
+                            <div class="user-img"><img src="../images/testimonial-david-kim.webp" alt=""></div>
+                            <div class="user-name-date">
+                                <h4>David Kim</h4>
+                                <p>10 June 2025</p>
+                            </div>
+                        </div>
+                        <div class="google-logo"><img src="../images/google-color-svgrepo-com.svg" alt=""></div>
+                    </div>
+                    <div class="stars"><img src="../images/five-star-rating-icon.svg" alt=""></div>
+                    <p class="testimonial-quote">"I got new glasses and contact lenses from here. The opticians were patient and helped me find the perfect fit."</p>
+                </div>
+                <div class="card">
+                    <div class="testimonial-user-info-google">
+                        <div class="testimonial-user-info">
+                            <div class="user-img"><img src="../images/testimonial-emily-johnson.webp" alt=""></div>
+                            <div class="user-name-date">
+                                <h4>Emily Johnson</h4>
+                                <p>15 July 2025</p>
+                            </div>
+                        </div>
+                        <div class="google-logo"><img src="../images/google-color-svgrepo-com.svg" alt=""></div>
+                    </div>
+                    <div class="stars"><img src="../images/five-star-rating-icon.svg" alt=""></div>
+                    <p class="testimonial-quote">"I got new glasses and contact lenses from here. The opticians were patient and helped me find the perfect fit."</p>
+                </div>
+                <div class="card">
+                    <div class="testimonial-user-info-google">
+                        <div class="testimonial-user-info">
+                            <div class="user-img"><img src="../images/testimonial-daniel-wilson.webp" alt=""></div>
+                            <div class="user-name-date">
+                                <h4>Daniel Wilson</h4>
+                                <p>28 May 2025</p>
+                            </div>
+                        </div>
+                        <div class="google-logo"><img src="../images/google-color-svgrepo-com.svg" alt=""></div>
+                    </div>
+                    <div class="stars"><img src="../images/five-star-rating-icon.svg" alt=""></div>
+                    <p class="testimonial-quote">"The glaucoma treatment plan was explained in detail, and I feel much more confident managing my condition now."</p>
+                </div>
+                <div class="card">
+                    <div class="testimonial-user-info-google">
+                        <div class="testimonial-user-info">
+                            <div class="user-img"><img src="../images/testimonial-hannah-brown.webp" alt=""></div>
+                            <div class="user-name-date">
+                                <h4>Hannah Brown</h4>
+                                <p>5 April 2025</p>
+                            </div>
+                        </div>
+                        <div class="google-logo"><img src="../images/google-color-svgrepo-com.svg" alt=""></div>
+                    </div>
+                    <div class="stars"><img src="../images/five-star-rating-icon.svg" alt=""></div>
+                    <p class="testimonial-quote">"Professional staff and excellent facilities. From the waiting area to the consultation, everything was smooth and pleasant."</p>
+                </div>
             </div>
          </section>
+	<!-- todo call to action -->
+          <section class="cta">
+            <h1>Clear Vision Starts Here. Schedule Your Eye Exam Today</h1>
+            <button class="master-btn border-btn">Book Your Visit</button>
+          </section>
     </main>
     <!-- todo footer section -->
     <footer id="contact" class="foo">
         <div class="navigation-footer">
             <div class="footer1">
-                <div class="logo"><img src="./public/images/swirling-circular-logo-cropped.png" alt="logo">
+                <div class="logo"><img src="../images/swirling-circular-logo-cropped.png" alt="logo">
                 <h2>Optilux</h2>
                 </div>
                 <p>At Optilux, we’re dedicated to providing high-quality, personalized eye care for patients of all ages. Our skilled team uses the latest technology to ensure accurate exams, effective treatments, and clear, healthy vision for life.</p>

@@ -27,6 +27,64 @@
 .navigation-bar ul li {
     list-style: none;
 }
+/* todo sub menu  */
+/* 1. Ensure parent list items act as the anchor point */
+.nav-links > li {
+    position: relative;
+}
+
+/* 2. Style the SVG arrow icons inside your links to look clean */
+.nav-links a svg {
+    width: 12px;
+    height: 12px;
+    margin-left: 6px;
+    fill: currentColor; /* Matches the color of the text automatically */
+    vertical-align: middle;
+}
+
+/* 3. The Hidden Sub-Menu Base State */
+.navigation-bar .sub-menu {
+    display: none; /* Keep it strictly hidden by default */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0; /* Vertical breathing room inside the dropdown container */
+    background-color: #effbfa;
+    position: absolute;
+    top: 100%; /* Sits precisely at the bottom edge of the parent item */
+    left: 0;
+    min-width: 200px;
+    list-style: none;
+    border-radius: 8px;
+    z-index: 100;
+    gap: 0px;
+}
+
+/* 4. Dropdown Link Item Layouts */
+.navigation-bar .sub-menu li {
+    width: 100%;
+}
+
+.navigation-bar .sub-menu a {
+    color: #333333;
+    padding: 10px 20px;
+    display: block; /* Ensures the click target extends across the entire width */
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+/* 5. Dropdown Link Hover State */
+.navigation-bar .sub-menu a:hover {
+    background-color: #e0f5f3;
+    color: #00b7b5;
+}
+
+/* 6. THE TRIGGER: Show the menu ONLY when hovering over its specific parent <li> */
+.nav-links > li:hover .sub-menu {
+    display: flex; /* Swaps from 'none' to 'flex' seamlessly */
+}
+/* todo sub menu  */
 .navigation-bar ul li a {
     display: flex;
     align-items: center;

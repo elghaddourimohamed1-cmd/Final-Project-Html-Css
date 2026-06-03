@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optilux Clear Vision</title>
-    <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet" href="../css/app.css">
 </head>
 
 <body>
     <!-- todo navigation bar -->
     <header>
         <nav class="navigation-bar">
-            <div class="logo"><img src="./public/images/swirling-circular-logo.jpg" alt="logo">
+            <div class="logo"><img src="../images/swirling-circular-logo.jpg" alt="logo">
                 <h2>Optilux</h2>
             </div>
-            <ul>
-                <li><a href="#">Home<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <ul class="nav-links">
+                <li><a href="./index.html">Home<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                             <path
                                 d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
                         </svg></a></li>
@@ -31,11 +31,19 @@
                 <li><a href="">Pages<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                             <path
                                 d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
-                        </svg></a></li>
+                        </svg></a>
+                    <ul class="sub-menu">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </li>
                 <li><a href="">Shop<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                             <path
                                 d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
-                        </svg></a></li>
+                        </svg></a><ul class="sub-menu">
+                        <li><a href="shop.html">Shop 1</a></li>
+                        <li><a href="shop2.html">Shop 2</a></li>
+                    </ul></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
@@ -66,7 +74,7 @@
                     <div class="rating">
                         <h5>Google Rating</h5>
                         <div class="five-stars">
-                            <h5>5.0&nbsp;&nbsp;&nbsp;<img src="./public/images/five-star-rating-icon.svg"
+                            <h5>5.0&nbsp;&nbsp;&nbsp;<img src="../images/five-star-rating-icon.svg"
                                     alt="five-star-rating-icon" width="100" height="15"></h5>
                         </div>
                         <h5>Based on 23k Reviews</h5>
@@ -74,12 +82,12 @@
                 </div>
                 <div class="right-img">
                     <div class="left-images">
-                        <img class="home-pic-1" src="./public/images/home-pic-1.webp" alt="">
-                        <img class="home-pic-2" src="./public/images/home-pic-2.webp" alt="">
+                        <img class="home-pic-1" src="../images/home-pic-1.webp" alt="">
+                        <img class="home-pic-2" src="../images/home-pic-2.webp" alt="">
                     </div>
                     <div class="right-images">
-                        <img class="home-pic-3" src="./public/images/home-pic-3.webp" alt="">
-                        <img class="home-pic-4" src="./public/images/home-pic-4.webp" alt="">
+                        <img class="home-pic-3" src="../images/home-pic-3.webp" alt="">
+                        <img class="home-pic-4" src="../images/home-pic-4.webp" alt="">
                     </div>
                 </div>
             </div>
@@ -155,7 +163,7 @@
                         <div class="info">
                             <h4>Comprehensive Eye Exams</h4>
                             <p>Full vision check, refraction, and early detection of eye diseases.</p>
-                            <div class="svg"><img src="./public/images/arrow-up-right-svgrepo-com.svg" alt=""></div>
+                            <div class="svg"><img src="../images/arrow-up-right-svgrepo-com.svg" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -164,7 +172,7 @@
                         <div class="info">
                             <h4>Glasses & Contact Lenses</h4>
                             <p>Prescription glasses, contact lens fitting, and digital eye strain solutions.</p>
-                            <div class="svg"><img src="./public/images/arrow-up-right-svgrepo-com.svg" alt=""></div>
+                            <div class="svg"><img src="../images/arrow-up-right-svgrepo-com.svg" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -173,7 +181,7 @@
                         <div class="info">
                             <h4>Pediatric Eye Care</h4>
                             <p>Myopia control, lazy eye treatment, and strabismus correction for children.</p>
-                            <div class="svg"><img src="./public/images/arrow-up-right-svgrepo-com.svg" alt=""></div>
+                            <div class="svg"><img src="../images/arrow-up-right-svgrepo-com.svg" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -182,7 +190,7 @@
                         <div class="info">
                             <h4>Cataract Surgery</h4>
                             <p>Standard removal, premium intraocular lens, and laser-assisted surgery.</p>
-                            <div class="svg"><img src="./public/images/arrow-up-right-svgrepo-com.svg" alt=""></div>
+                            <div class="svg"><img src="../images/arrow-up-right-svgrepo-com.svg" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -191,7 +199,7 @@
                         <div class="info">
                             <h4>Refractive Surgery</h4>
                             <p>LASIK, PRK, and SMILE for permanent correction of vision problems.</p>
-                            <div class="svg"><img src="./public/images/arrow-up-right-svgrepo-com.svg" alt=""></div>
+                            <div class="svg"><img src="../images/arrow-up-right-svgrepo-com.svg" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -200,7 +208,7 @@
                         <div class="info">
                             <h4>Glaucoma Care</h4>
                             <p>Screening, monitoring eye pressure, laser therapy, and surgery.</p>
-                            <div class="svg"><img src="./public/images/arrow-up-right-svgrepo-com.svg" alt=""></div>
+                            <div class="svg"><img src="../images/arrow-up-right-svgrepo-com.svg" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -214,22 +222,22 @@
             </div>
             <div class="process-cards">
                 <div class="process-card">
-                    <div class="img"><img src="./public/images/calendar-check-svgrepo-com.svg" alt="calendar"></div>
+                    <div class="img"><img src="../images/calendar-check-svgrepo-com.svg" alt="calendar"></div>
                     <h4>Book Appointment</h4>
                     <p>Book your appointment online or by phone with our friendly staff.</p>
                 </div>
                 <div class="process-card">
-                    <div class="img"><img src="./public/images/eye-svgrepo-com.svg" alt="calendar"></div>
+                    <div class="img"><img src="../images/eye-svgrepo-com.svg" alt="calendar"></div>
                     <h4>Eye Examination</h4>
                     <p>Receive a comprehensive eye exam with state-of-the-art diagnostics.</p>
                 </div>
                 <div class="process-card">
-                    <div class="img"><img src="./public/images/glasses-svgrepo-com.svg" alt="calendar"></div>
+                    <div class="img"><img src="../images/glasses-svgrepo-com.svg" alt="calendar"></div>
                     <h4>Personalized Solutions</h4>
                     <p>Get personalized recommendations for glasses, contacts, or treatment.</p>
                 </div>
                 <div class="process-card">
-                    <div class="img"><img src="./public/images/pulse-svgrepo-com.svg" alt="calendar"></div>
+                    <div class="img"><img src="../images/pulse-svgrepo-com.svg" alt="calendar"></div>
                     <h4>Ongoing Care</h4>
                     <p>Enjoy clearer vision and ongoing care with regular follow-ups.</p>
                 </div>
@@ -242,9 +250,9 @@
                 <h1>Professional and Personalized Eye Care Services</h1>
                 <p>We provide complete vision care designed for all ages. From routine eye exams to advanced treatments,
                     our dedicated team ensures your eyes remain healthy and your vision clear.</p>
-                <div class="signature"><img src="./public/images/Mohamed-Signature.png" alt=""></div>
+                <div class="signature"><img src="../images/Mohamed-Signature.png" alt=""></div>
             </div>
-            <div class="about-us-img"><img src="./public/images/home-pic-9.webp" alt=""></div>
+            <div class="about-us-img"><img src="../images/home-pic-9.webp" alt=""></div>
         </section>
         <!-- todo appointment section  -->
         <section class="appointment">
@@ -256,7 +264,7 @@
                 <div class="opening-hours">
                     <div class="first-day">
                         <div class="day">
-                            <div class="img"><img src="./public/images/clock-circle-svgrepo-com.svg" alt="clock"></div>
+                            <div class="img"><img src="../images/clock-circle-svgrepo-com.svg" alt="clock"></div>
                             <p>Monday - Thursday</p>
                         </div>
                         <div class="hour">
@@ -265,7 +273,7 @@
                     </div>
                     <div class="first-day">
                         <div class="day">
-                            <div class="img"><img src="./public/images/clock-circle-svgrepo-com.svg" alt="clock"></div>
+                            <div class="img"><img src="../images/clock-circle-svgrepo-com.svg" alt="clock"></div>
                             <p>Friday</p>
                         </div>
                         <div class="hour">
@@ -274,7 +282,7 @@
                     </div>
                     <div class="first-day">
                         <div class="day">
-                            <div class="img"><img src="./public/images/clock-circle-svgrepo-com.svg" alt="clock"></div>
+                            <div class="img"><img src="../images/clock-circle-svgrepo-com.svg" alt="clock"></div>
                             <p>Saturday</p>
                         </div>
                         <div class="hour">
@@ -283,7 +291,7 @@
                     </div>
                     <div class="first-day">
                         <div class="day">
-                            <div class="img"><img src="./public/images/clock-circle-svgrepo-com.svg" alt="clock"></div>
+                            <div class="img"><img src="../images/clock-circle-svgrepo-com.svg" alt="clock"></div>
                             <p>Sunday</p>
                         </div>
                         <div class="hour">
@@ -335,22 +343,22 @@
                         achieve clear, healthy vision with compassionate care.</p>
                 </div>
                 <div class="testimonials-navigate">
-                    <img src="./public/images/chevron-back-circle.svg" alt="">
-                    <img src="./public/images/chevron-forward-circle.svg" alt="">
+                    <img src="../images/chevron-back-circle.svg" alt="">
+                    <img src="../images/chevron-forward-circle.svg" alt="">
                 </div>
             </div>
             <div class="testimonials-cards">
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        <div class="img-quote"><img src="./public/images/quote-left-svgrepo-com.svg" alt=""></div>
+                        <div class="img-quote"><img src="../images/quote-left-svgrepo-com.svg" alt=""></div>
                         <div class="testimonial-paragraph">
                             <p>"The optometrist was very patient and explained my results in detail. I finally found the
                                 right prescription, and my new glasses have completely improved my daily life."</p>
-                            <div class="img-stars"><img src="./public/images/five-star-rating-icon.svg" alt=""></div>
+                            <div class="img-stars"><img src="../images/five-star-rating-icon.svg" alt=""></div>
                         </div>
                     </div>
                     <div class="testimonial-user-info">
-                        <div class="user-img"><img src="./public/images/home- testimonial-michael-lee.webp" alt="">
+                        <div class="user-img"><img src="../images/home- testimonial-michael-lee.webp" alt="">
                         </div>
                         <div class="user-name-date">
                             <h4>Michael Lee</h4>
@@ -360,15 +368,15 @@
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        <div class="img-quote"><img src="./public/images/quote-left-svgrepo-com.svg" alt=""></div>
+                        <div class="img-quote"><img src="../images/quote-left-svgrepo-com.svg" alt=""></div>
                         <div class="testimonial-paragraph">
                             <p>""I brought my son for an eye exam and the staff made him feel so relaxed. The doctor was
                                 gentle, caring, and gave us a clear plan to support his vision needs at school."</p>
-                            <div class="img-stars"><img src="./public/images/five-star-rating-icon.svg" alt=""></div>
+                            <div class="img-stars"><img src="../images/five-star-rating-icon.svg" alt=""></div>
                         </div>
                     </div>
                     <div class="testimonial-user-info">
-                        <div class="user-img"><img src="./public/images/home- testimonial-sophia-martinez.webp" alt="">
+                        <div class="user-img"><img src="../images/home- testimonial-sophia-martinez.webp" alt="">
                         </div>
                         <div class="user-name-date">
                             <h4>Sophia Martinez</h4>
@@ -396,30 +404,30 @@
                 <div class="accordion-items">
                     <div class="accordion-item">
                         <div class="accordion-text">How do I book an appointment?</div>
-                        <img src="./public/images/chevron-down-solid-full.svg" alt="">
+                        <img src="../images/chevron-down-solid-full.svg" alt="">
                     </div>
                     <div class="accordion-item">
                         <div class="accordion-text">Do I need a referral to see an optometrist?</div>
-                        <img src="./public/images/chevron-down-solid-full.svg" alt="">
+                        <img src="../images/chevron-down-solid-full.svg" alt="">
                     </div>
                     <div class="accordion-item">
                         <div class="accordion-text">How often should I have my eyes checked?</div>
-                        <img src="./public/images/chevron-down-solid-full.svg" alt="">
+                        <img src="../images/chevron-down-solid-full.svg" alt="">
                     </div>
                     <div class="accordion-item">
                         <div class="accordion-text">How long does an eye exam take?</div>
-                        <img src="./public/images/chevron-down-solid-full.svg" alt="">
+                        <img src="../images/chevron-down-solid-full.svg" alt="">
                     </div>
                     <div class="accordion-item">
                         <div class="accordion-text">What should I bring to my appointment?</div>
-                        <img src="./public/images/chevron-down-solid-full.svg" alt="">
+                        <img src="../images/chevron-down-solid-full.svg" alt="">
                     </div>
                 </div>
             </div>
         </section>
         <!-- todo video section -->
         <section class="video" id="video">
-            <div class="img"><img src="./public/images/home-pic-10.webp" alt="">
+            <div class="img"><img src="../images/home-pic-10.webp" alt="">
                 <a href="#video-popup" class="player"><span class="triangle-right"></span></a>
                 <div id="video-popup" class="popup-overlay">
                     <a href="#video" class="close-overlay"></a>
@@ -446,7 +454,7 @@
     <footer id="contact" class="foo">
         <div class="navigation-footer">
             <div class="footer1">
-                <div class="logo"><img src="./public/images/swirling-circular-logo-cropped.png" alt="logo">
+                <div class="logo"><img src="../images/swirling-circular-logo-cropped.png" alt="logo">
                     <h2>Optilux</h2>
                 </div>
                 <p>At Optilux, we’re dedicated to providing high-quality, personalized eye care for patients of all

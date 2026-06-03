@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optilux Clear Vision</title>
-    <link rel="stylesheet" href="./public/css/app.css">
-    <link rel="stylesheet" href="./public/css/contact.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/faq.css">
 </head>
 
 <body>
     <!-- todo navigation bar -->
     <header>
         <nav class="navigation-bar">
-            <div class="logo"><img src="./public/images/swirling-circular-logo.jpg" alt="logo">
+            <div class="logo"><img src="../images/swirling-circular-logo.jpg" alt="logo">
                 <h2>Optilux</h2>
             </div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="./index.html">Home<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                             <path
                                 d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
@@ -32,11 +32,19 @@
                 <li><a href="">Pages<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                             <path
                                 d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
-                        </svg></a></li>
+                        </svg></a>
+                    <ul class="sub-menu">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </li>
                 <li><a href="">Shop<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                             <path
                                 d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z" />
-                        </svg></a></li>
+                        </svg></a><ul class="sub-menu">
+                        <li><a href="shop.html">Shop 1</a></li>
+                        <li><a href="shop2.html">Shop 2</a></li>
+                    </ul></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
@@ -54,53 +62,56 @@
         </nav>
     </header>
     <main class="main-content">
-        <!-- todo contact us hero section -->
-        <section class="contact-us-hero">
-            <h1>Contact Us</h1>
+        <!-- todo faq hero section -->
+        <section class="faq-hero">
+            <h1>FAQ</h1>
             <div class="breadcrumb">
                 <a href="index.html">Home</a>
                 <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9 6L15 12L9 18" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                <p>Contact Us</p>
+                <p>FAQs</p>
             </div>
         </section>
-        <!-- todo contact us main section -->
-        <section class="contact-us-section">
-            <div class="location-details-and-form">
-                <div class="locations">
-                    <div class="location">
-                        <h4>New York</h4>
-                        <p>100 S Main St, New York, NY 10001<br>(212) 677-449014<br>elghaddouri@gmail.com<br></p>
+        <!-- todo faq main section -->
+         <section class="faq">
+            <div class="accordion">
+                <div class="faq-buttons">
+                    <button class="master-btn">Appointments & Exams</button>
+                    <button class="normal-btn">Treatments & Procedures</button>
+                    <button class="normal-btn">Insurance & Payments</button>
+                </div>
+                <div class="accordion-items">
+                    <div class="accordion-item">
+                        <div class="accordion-text">How do I book an appointment?</div>
+                        <img src="../images/chevron-down-solid-full.svg" alt="">
                     </div>
-                    <div class="location">
-                        <h4>Los Angeles</h4>
-                        <p>742 S Olive St, Los Angeles, CA 90014<br>(212) 677-449014<br>elghaddouri@gmail.com<br></p>
+                    <div class="accordion-item">
+                        <div class="accordion-text">Do I need a referral to see an optometrist?</div>
+                        <img src="../images/chevron-down-solid-full.svg" alt="">
                     </div>
-                    <div class="location">
-                        <h4>Chicago</h4>
-                        <p>780 W Madison St, Chicago, IL 60661<br>(212) 677-449014<br>elghaddouri@gmail.com<br></p>
+                    <div class="accordion-item">
+                        <div class="accordion-text">How often should I have my eyes checked?</div>
+                        <img src="../images/chevron-down-solid-full.svg" alt="">
                     </div>
-                    <div class="location">
-                        <h4>Miami</h4>
-                        <p>500 Ocean Dr, Miami, FL 33139<br>(212) 677-449014<br>elghaddouri@gmail.com<br></p>
+                    <div class="accordion-item">
+                        <div class="accordion-text">How long does an eye exam take?</div>
+                        <img src="../images/chevron-down-solid-full.svg" alt="">
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-text">What should I bring to my appointment?</div>
+                        <img src="../images/chevron-down-solid-full.svg" alt="">
                     </div>
                 </div>
-                <form class="form">
-                    <div class="name-email-phone-message">
-                        <input type="text" placeholder="Your Name">
-                        <input type="email" placeholder="Your Email">
-                        <input type="tel" placeholder="Your Phone">
-                        <textarea name="message" placeholder="Your Message" rows="5"></textarea>
-                        <button class="master-btn contact-btn">Send Message</button>
-                    </div>
-                </form>              
             </div>
-        </section>    
+            <div class="faq-img">
+                <img src="../images/services_about-us_faq.webp" alt="">
+            </div>
+         </section>
     </main>
     <!-- todo footer section -->
     <footer id="contact" class="foo">
         <div class="navigation-footer">
             <div class="footer1">
-                <div class="logo"><img src="./public/images/swirling-circular-logo-cropped.png" alt="logo">
+                <div class="logo"><img src="../images/swirling-circular-logo-cropped.png" alt="logo">
                 <h2>Optilux</h2>
                 </div>
                 <p>At Optilux, we’re dedicated to providing high-quality, personalized eye care for patients of all ages. Our skilled team uses the latest technology to ensure accurate exams, effective treatments, and clear, healthy vision for life.</p>
